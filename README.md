@@ -64,3 +64,28 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## simple add to cart website in laravel see attached below screenshots and Usages
+
+## Set up :
+
+1. Clone the repo and cd into it
+2. In your terminal composer install
+3. Rename or copy .env.example file to .env
+4. Create Database - simple_cart
+5. php artisan key:generate
+6. php artisan migrate
+7. run command[laravel file manager]:- php artisan storage:link
+8. php artisan serve or use virtual host
+9. Visit localhost:8000 in your browser
+10. Visit /admin if you want to access the admin panel. Admin Email/Password: admin@gmail.com/1111. User Email/Password: user@gmail.com/1111
+
+![home](https://github.com/nandydev/lara-addtocart/assets/164607559/aadb88a9-fe24-4f8a-b1f4-f839e441fd5d)
+
+
+
+
+
+
+
+
