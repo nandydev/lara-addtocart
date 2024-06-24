@@ -78,12 +78,40 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 7. run command[laravel file manager]:- php artisan storage:link
 8. php artisan serve or use virtual host
 9. Visit localhost:8000 in your browser
-10. Visit /admin if you want to access the admin panel. Admin Email/Password: admin@gmail.com/1111. User Email/Password: user@gmail.com/1111
+    
 
+# Register
+![register](https://github.com/nandydev/lara-addtocart/assets/164607559/d597a3ca-f835-466e-b5e7-064d64e9ce14)
+
+# login 
+![login](https://github.com/nandydev/lara-addtocart/assets/164607559/a941ba82-9d97-411a-b949-fd0d16e825f3)
+
+# Home page
 ![home](https://github.com/nandydev/lara-addtocart/assets/164607559/aadb88a9-fe24-4f8a-b1f4-f839e441fd5d)
 
+# Profile
+![profile](https://github.com/nandydev/lara-addtocart/assets/164607559/1b55fde8-a93b-40a6-9e64-4ca0db21486a)
 
+# Update profile
+![edit-profile](https://github.com/nandydev/lara-addtocart/assets/164607559/04d0fff3-eb49-44b8-9653-d11402265b4c)
 
+# About
+![about](https://github.com/nandydev/lara-addtocart/assets/164607559/48e343bd-1258-49ce-80bb-e1b8c1d5182b)
+
+# Cart
+![cart](https://github.com/nandydev/lara-addtocart/assets/164607559/22328ff5-4698-428b-b797-0786deb751c8)
+
+# Checkout
+![checkout](https://github.com/nandydev/lara-addtocart/assets/164607559/5c4540cf-f22f-480b-ab8f-2b1c86d4d909)
+
+# Contact
+![contact](https://github.com/nandydev/lara-addtocart/assets/164607559/bcf6637e-b4a8-4c7a-a454-127d07abc4e4)
+
+# Orders
+![orders](https://github.com/nandydev/lara-addtocart/assets/164607559/9c13cd30-7a7a-4c7d-ab23-cf73574ffe9d)
+
+# Admin Dashboard 
+![Admin-Panel](https://github.com/nandydev/lara-addtocart/assets/164607559/07e96df3-cde2-4015-bb0c-613262f673cb)
 
 
 
