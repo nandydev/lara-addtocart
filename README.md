@@ -78,7 +78,18 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 7. run command[laravel file manager]:- php artisan storage:link
 8. php artisan serve or use virtual host
 9. Visit localhost:8000 in your browser
-    
+
+## Set Your SMTP Mail Credentials Here 
+
+MAIL_MAILER=smtp
+MAIL_HOST=smtp.googlemail.com
+MAIL_PORT=465
+MAIL_USERNAME=username
+MAIL_PASSWORD=password
+MAIL_ENCRYPTION=ssl
+MAIL_FROM_ADDRESS=email_address
+MAIL_FROM_NAME=
+
 
 # Register
 ![login](https://github.com/nandydev/lara-addtocart/assets/164607559/a941ba82-9d97-411a-b949-fd0d16e825f3)
