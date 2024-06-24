@@ -81,10 +81,10 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
     
 
 # Register
-![register](https://github.com/nandydev/lara-addtocart/assets/164607559/d597a3ca-f835-466e-b5e7-064d64e9ce14)
+![login](https://github.com/nandydev/lara-addtocart/assets/164607559/a941ba82-9d97-411a-b949-fd0d16e825f3)
 
 # login 
-![login](https://github.com/nandydev/lara-addtocart/assets/164607559/a941ba82-9d97-411a-b949-fd0d16e825f3)
+![register](https://github.com/nandydev/lara-addtocart/assets/164607559/d597a3ca-f835-466e-b5e7-064d64e9ce14)
 
 # Home page
 ![home](https://github.com/nandydev/lara-addtocart/assets/164607559/aadb88a9-fe24-4f8a-b1f4-f839e441fd5d)
