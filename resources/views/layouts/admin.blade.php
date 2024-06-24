@@ -75,6 +75,14 @@
                     <span>Messages</span></a>
             </li>
 
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('admin.orders.getorders') }}">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Orders</span>
+                </a>
+            </li>
+
+
             <!-- Nav Item - Security -->
             <li class="nav-item">
                 <a class="nav-link" href="#">

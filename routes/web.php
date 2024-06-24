@@ -6,6 +6,9 @@ use App\Http\Controllers\BookController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\Auth\AuthController;
+use App\Http\Controllers\CheckoutController;
+use App\Http\Controllers\OrderController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -44,7 +47,6 @@ Route::post('post-registration', [AuthController::class, 'postRegistration'])->n
 Route::get('dashboard', [BookController::class, 'index']); 
 Route::get('logout', [AuthController::class, 'logout'])->name('logout');
 
-// Route::get('home', [AuthController::class, 'dashboard'])->name('home');
 Route::get('admin/dashboard', [AuthController::class, 'adminDashboard'])->name('admin.dashboard');
 
 
@@ -52,6 +54,7 @@ Route::prefix('admin')->name('admin.')->group(function() {
     Route::get('/products', [BookController::class, 'list'])->name('products');
     Route::get('/users', [UserController::class, 'index'])->name('index');
     Route::get('/messages', [ContactController::class, 'index'])->name('messages.index');
+    Route::get('/orders', [OrderController::class, 'getorders'])->name('orders.getorders');
     Route::get('/products/create', [BookController::class, 'create'])->name('products.create');
     Route::post('/products', [BookController::class, 'store'])->name('products.store');
     Route::get('/products/{product}/edit', [BookController::class, 'edit'])->name('products.edit'); // Edit route
@@ -59,3 +62,14 @@ Route::prefix('admin')->name('admin.')->group(function() {
     Route::delete('/products/{product}', [BookController::class, 'destroy'])->name('products.destroy'); // Delete route
 });
 
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'show'])->name('profile.show');
+    Route::get('/profile/edit', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::post('/profile/update', [ProfileController::class, 'update'])->name('profile.update');
+});
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/orders', [OrderController::class, 'index'])->name('orders.index');
+    Route::get('/checkout', [CheckoutController::class, 'index'])->name('checkout');
+    Route::post('/checkout', [CheckoutController::class, 'processCheckout'])->name('checkout.process');
+});

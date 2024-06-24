@@ -41,6 +41,11 @@
                   </div>
   
                   <p class="text-center text-muted mt-5 mb-0">Don't have an account? <a href="{{ route('register') }}" class="fw-bold text-body"><u>Register here</u></a></p>
+
+                  
+                  <div class="d-flex justify-content-center mt-3">
+                      <a href="{{ route('register') }}" class="btn btn-primary btn-block btn-lg gradient-custom-4">Login with Google</a>
+                  </div>
   
               </form>
   

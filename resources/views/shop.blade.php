@@ -11,8 +11,10 @@
     rel="stylesheet"
     />
   
-  
     <style>
+        /* body{
+            line-height: 2.5;
+        } */
         .text-lg-start {
             color: #fff !important;
             background: #045b6c;
@@ -64,11 +66,18 @@
         }
 
         .small-card .card-title {
-            font-size: 1.1rem; /* Adjust font size for the title */
+            font-size: 1.1rem;
         }
 
         .small-card .card-text {
-            font-size: 0.9rem; /* Adjust font size for the text */
+            font-size: 0.9rem;
+        }
+        .card-img, .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        h5.card-title {
+            margin-top: 12px;
         }
 
     </style>
@@ -92,6 +101,10 @@
             <li class="nav-item">
                 <a class="nav-link active" href="{{ url('/contact') }}">Contact</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="{{ route('orders.index') }}">Orders</a>
+            </li>
+
         </ul>
         <form class="d-flex" id="searchForm">
             <input class="form-control me-2" type="search" id="searchInput" placeholder="Search" aria-label="Search">
@@ -100,23 +113,28 @@
             <i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart <span class="badge bg-danger">{{ count((array) session('cart')) }}</span>
         </a>
         <ul class="navbar-nav">
-        @guest
-            <li class="nav-item">
-                <a class="nav-link active" href="{{ route('login') }}">Login</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="{{ route('register') }}">Register</a>
-            </li>
-        @else
-            <li class="nav-item">
-                <a class="nav-link active" href="{{ route('logout') }}">Logout</a>
-            </li>
-        @endguest
-    </ul>
+            @guest
+                <li class="nav-item">
+                    <a class="nav-link active" href="{{ route('login') }}">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="{{ route('register') }}">Register</a>
+                </li>
+            @else
+                <li class="nav-item">
+                    <a class="nav-link active" href="{{ route('profile.show') }}">
+                        <i class="fa fa-user" aria-hidden="true"></i> Profile
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="{{ route('logout') }}">Logout</a>
+                </li>
+            @endguest
+        </ul>
     </div>
 </nav>
 <div class="container mt-4">
-    <h2 class="mb-3">Shopping Cart</h2>
+    <!-- <h2 class="mb-3">Shopping Cart</h2> -->
     @if(session('success'))
         <div class="alert alert-success">
             {{ session('success') }}
